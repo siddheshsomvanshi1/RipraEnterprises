@@ -1,1 +1,0 @@
-# RipraEnterprises project
