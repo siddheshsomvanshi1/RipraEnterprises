@@ -1,0 +1,160 @@
+.wrapper {
+  background: linear-gradient(to right, #f7faff, #ffffff);
+  padding: 5rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mainTitle {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  background: linear-gradient(90deg, #5f2c82, #49a09d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #5f2c82;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #5f2c82, #49a09d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.subTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #5f2c82, #49a09d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.valueCard {
+  background: #ffffff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.valueCard:hover {
+  transform: translateY(-4px);
+}
+
+.valueCard svg {
+  font-size: 1.8rem;
+  color: #49a09d;
+  margin-bottom: 0.5rem;
+}
+
+.valueCard span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ✅ Updated with RIPRA Gradient */
+.ctaBox {
+  background: linear-gradient(90deg,
+    #F6C644,  /* R - Yellow */
+    #F4D94D,  /* I - Light Yellow */
+    #B1D477,  /* P - Greenish */
+    #7EC8D7,  /* R - Light Blue */
+    #499CD2   /* A - Blue */
+  );
+  color: #5c6469;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ctaIcon {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+  color: #ffd700;
+}
+
+.ctaButton {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  background: #fff;
+  color: #5f2c82;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: #f1f1f1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 2rem;
+  }
+  .subTitle {
+    font-size: 1.5rem;
+  }
+  .ctaBox h4 {
+    font-size: 1.2rem;
+  }
+  .ctaButton {
+    width: 100%;
+  }
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Brand Colors */
+  --ripra-yellow: #F6C644;
+  --ripra-gold: #F4D94D;
+  --ripra-green: #B1D477;
+  --ripra-teal: #7EC8D7;
+  --ripra-blue: #499CD2;
+  --ripra-indigo: #434D9C;
+  --ripra-royal-blue: #233D9C;
+  --ripra-gradient: linear-gradient(90deg, #F6C644, #F4D94D, #B1D477, #7EC8D7, #499CD2);
+
+  /* Light Theme */
+  --header-bg: #ffffff;
+  --header-text: var(--ripra-indigo);
+  --theme-toggle-hover: rgba(0, 0, 0, 0.1);
+  --nav-bg: transparent;
+  --nav-text: var(--ripra-blue);
+  --nav-text-hover: var(--ripra-teal);
+  --nav-text-active: var(--ripra-yellow);
+  --scrolled-nav-bg: rgba(255, 255, 255, 0.98);
+  --mobile-menu-bg: rgba(255, 255, 255, 0.98);
+  --mobile-menu-text: var(--ripra-royal-blue);
+  --mobile-menu-text-active: var(--ripra-yellow);
+  --mobile-menu-item-hover: rgba(0, 0, 0, 0.05);
+  --body-bg: #f5f5f5;
+  --text-color: var(--ripra-royal-blue);
+}
+
+[data-theme="dark"] {
+  /* Dark Theme */
+  --header-bg: #1c1f2b;
+  --header-text: var(--ripra-gold);
+  --theme-toggle-hover: rgba(255, 255, 255, 0.1);
+  --nav-bg: transparent;
+  --nav-text: var(--ripra-green);
+  --nav-text-hover: var(--ripra-teal);
+  --nav-text-active: var(--ripra-yellow);
+  --scrolled-nav-bg: rgba(30, 30, 30, 0.98);
+  --mobile-menu-bg: rgba(30, 30, 30, 0.98);
+  --mobile-menu-text: var(--ripra-blue);
+  --mobile-menu-text-active: var(--ripra-gold);
+  --mobile-menu-item-hover: rgba(255, 255, 255, 0.05);
+  --body-bg: #1c1f2b;
+  --text-color: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--nav-text);
+  transition: color 0.3s ease;
+}
+
+button:hover {
+  color: var(--nav-text-hover);
+}
